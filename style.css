@@ -115,7 +115,8 @@ nav.navbar {
 #blog h2,
 #team h2 {
     margin-bottom: 3rem; /* Adjust spacing as needed */
-    color: #db691e ;
+    color: #db691e ; 
+    font-family: cursive;
 }
 
 .services, .home {
@@ -131,6 +132,21 @@ nav.navbar {
     display: flex;       /* Allows better control over the icon and text alignment */
     align-items: flex-start; /* Ensures the text aligns to the top of the icon */
     margin-bottom: 0.5rem; /* Optional: Adds spacing between list items */
+}
+
+.home {
+    list-style-type: none; /* Optional: removes default bullets */
+    text-align: center; /* Centers text inside the list items */
+    margin: 0 auto; /* Centers the <ul> horizontally */
+    padding: 0; /* Removes default padding */
+}
+
+#home .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    height: 100%; /* Optional: ensures full height if needed */
 }
 
 .services li span {

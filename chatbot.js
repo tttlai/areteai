@@ -43,7 +43,7 @@
 //         appendMessage("Bot: Sorry, an error occurred.", "bot");
 //     });
 // }
-var apiKey = 'sk-RIyvyIme6UmHNWJtln6rT3BlbkFJ0vh7uNZgKItOQzQNLSt';
+var apiKey = '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';
 var threadId;
 
 function sendMessage() {
@@ -254,6 +254,13 @@ function toggleChatbox(forceShow) {
     } else {
         chatbox.style.display = "none";
         messageIcon.style.display = "block";
+    }
+}
+
+function closeNavbar() {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
     }
 }
 

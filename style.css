@@ -36,7 +36,7 @@ body {
     text-align: center;
     font-weight: bold;
     border: 5px 5px solid #ccc; 
-    color: ##; /* Black text color */
+    color: #000000; /* Black text color */
 }
 
 #chat-container {
@@ -106,8 +106,33 @@ nav.navbar {
     margin: 0 5px; /* Optional: Add spacing between items inside the border */
 }
 
-.navbar-nav .nav-link {
-    color: #FFFFFF; /* Bright white text */
+.navbar-nav{
+    background-color: #1f242d; /* Limit background to the navigation area */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 5px;
+}
+
+.nav-item .nav-link {
+    color: #ffffff; /* Ensure text is visible */
+    padding: 10px 15px; /* Spacing for links */
+}
+
+.navbar {
+    padding: 10px 15px; /* Add padding for better spacing */
+}
+
+.navbar-toggler {
+    border: none; /* Remove the default border for a cleaner look */
+}
+
+.navbar-brand {
+    font-size: 20px; /* Adjust font size for mobile */
+}
+
+
+p {
+    font-size: 1rem; /* Make text slightly smaller for mobile readability */
+    line-height: 1.5;
 }
 
 #home h2, 
@@ -116,7 +141,8 @@ nav.navbar {
 #team h2 {
     margin-bottom: 3rem; /* Adjust spacing as needed */
     color: #db691e ; 
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 .services, .home {
@@ -139,14 +165,6 @@ nav.navbar {
     text-align: center; /* Centers text inside the list items */
     margin: 0 auto; /* Centers the <ul> horizontally */
     padding: 0; /* Removes default padding */
-}
-
-#home .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers children horizontally */
-    justify-content: center; /* Centers children vertically */
-    height: 100%; /* Optional: ensures full height if needed */
 }
 
 .services li span {
@@ -195,6 +213,7 @@ section {
     font-size: 100px;
     color: #fff;
     font-weight: 700;
+    padding: 20px 15px; /* Reduce padding for smaller devices */
 }
 
 .image-section{
@@ -239,4 +258,21 @@ footer {
     background-color: #084c61;
     padding: 5px;
     text-align: center;
+}
+
+.service-item {
+    margin-bottom: 20px; /* Add spacing between cards */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .service-item h4 {
+        font-size: 1.2rem; /* Adjust title size */
+    }
+
+    .service-item p {
+        font-size: 0.9rem; /* Adjust description size */
+    }
 }
